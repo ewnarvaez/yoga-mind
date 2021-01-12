@@ -1,0 +1,12 @@
+:root {
+  /* Variables de espaciado */
+  --spacer-1xs: 0.063rem; /*1px*/
+  --spacer-2xs: 0.125rem; /*2px*/
+  --spacer-xs: 0.313rem; /*5px*/
+  --spacer-s: 0.625rem; /*10px*/
+  --spacer-m: 1.25rem; /*20px*/
+  --spacer-2m: 1.875rem; /*30px*/
+  --spacer-l: 2.5rem; /*40px*/
+  --spacer-xl: 5rem; /*80px*/
+  --spacer-2xl: 10rem; /*160px*/
+}

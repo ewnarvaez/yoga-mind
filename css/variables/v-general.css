@@ -1,0 +1,5 @@
+:root {
+  --oculto: polygon(1px 1px, 1px 1px, 1px 1px);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

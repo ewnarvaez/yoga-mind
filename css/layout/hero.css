@@ -1,0 +1,64 @@
+.hero {
+  min-height: calc(100vh - 3em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2c2c;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/img/Desktop_Main_Slide.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 5vh;
+}
+
+.hero__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.hero__text h1 {
+  color: var(--light);
+  text-align: center;
+}
+
+.hero__text h3 {
+  color: var(--light);
+  font-size: calc(0.8em + 0.5vw);
+  text-align: center;
+}
+
+.hero__text .action_button {
+  margin-top: 4vh;
+}
+
+@media only screen and (orientation: portrait) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/img/Mobile_Main_Slide_Portrait.jpg");
+  }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/img/Mobile_Main_Slide.jpg");
+  }
+}

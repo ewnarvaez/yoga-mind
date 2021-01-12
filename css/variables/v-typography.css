@@ -1,0 +1,31 @@
+:root {
+  /* Familias tipográficas */
+  --font: Roboto, sans-serif;
+
+  /* Variables tipográficas */
+  --text-caption: 0.75rem; /*12px*/
+  --text-note: 0.875rem; /*14px*/
+  --text-base: 1rem; /*16px*/
+  --text-medium: 1.25rem; /*20px*/
+  --text-subheader: 1.375rem; /*22px*/
+  --text-title: 2rem; /*32px*/
+  --text-title-big: 2.25rem; /*36px*/
+  --text-headline: 2.813rem; /*45px*/
+  --text-headline-big: 3.5rem; /*56px*/
+  --text-display: 4rem; /*64px*/
+  --text-jumbo: 5.625rem; /*90px*/
+}
+
+@media (max-width: 900px) {
+  :root {
+    /* Variables tipográficas */
+    --text-caption: 0.75rem; /*12px*/
+    --text-note: 0.875rem; /*14px*/
+    --text-base: 1rem; /*16px*/
+    --text-subheader: 1.25rem; /*20px*/
+    --text-title: 1.5rem; /*24px*/
+    --text-headline: 2.25rem; /*36px*/
+    --text-display: 3rem; /*48px*/
+    --text-jumbo: 3.75rem; /*60px*/
+  }
+}

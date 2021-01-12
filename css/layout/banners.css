@@ -1,0 +1,93 @@
+.banner_one,
+.banner_two {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  display: grid;
+  grid-template-columns: var(--grid-main);
+  column-gap: var(--grid-gap);
+  margin-bottom: 5vh;
+  align-items: center;
+}
+
+.banner_one img {
+  grid-column-end: -1;
+  margin-bottom: 4vh;
+}
+
+.banner_one__text {
+  grid-column-end: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_one__text h2 {
+  margin-bottom: 20px;
+}
+
+.banner_one__text p {
+  margin-bottom: 30px;
+}
+
+.banner_two img {
+  margin-bottom: 4vh;
+}
+
+.banner_two__text {
+  grid-column-end: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_two__text h2 {
+  margin-bottom: 20px;
+}
+
+.banner_two__text p {
+  margin-bottom: 30px;
+}
+
+.app_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.app_store {
+  background: url(/img/boton-appstore-600x201.png) no-repeat center center;
+  background-size: contain;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.play_store {
+  background: url(/img/boton_google_play.svg) no-repeat center center;
+  background-size: contain;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) and (min-width: 701px) {
+  .banner_one__text {
+    grid-column-end: 5;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner_one img {
+    order: -1;
+  }
+  .banner_two img {
+    grid-column-end: -1;
+  }
+  .banner_one__text {
+    grid-column-end: -1;
+  }
+}
